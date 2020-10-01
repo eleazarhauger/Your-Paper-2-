@@ -1,0 +1,114 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % english default language
+\usepackage{listings}
+\usepackage[binary-units]{siunitx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{cleveref}
+
+\author{Eleazar Sebastian I.~V.~Hauger}
+\title{Final assignment for Dataintro20}
+\date{\today}
+
+\begin{document}
+\maketitle
+\abstract 
+An assignment about the usage of Latex for the course Dataintro20. 
+\tableofcontents
+
+\section{Introduction}
+This document should show what I've learned to do in Latex as well as my skills in \emph{the terminal} and \emph{Github}
+
+\subsection{Why I'm writing in English}
+I'm writing in English because i come from Norway, so I'm not completely fluent in writing Swedish yet. English however, is a language that I've studied extensively over several years, and I'm also born an partly raised in England. This document is a test in tech-skills, so i figured that it would be alright if i wrote it in English. 
+
+\section{Laziness}
+While trying to find out what to write about in this document, the most obvious choice would be \emph{nothing} because in that way i don't have to think at all while writing, and i can just go on and on and on and on and on and on. I could type in some examples from the introduction guides like: 
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}
+{2a}
+\end{equation}
+or
+\begin{equation}
+\Omega = \sum_{k=1}^{n} \omega_k
+\end{equation}
+But to actually do some of my assignment I should get serious. The first thing that I want to do is to post a picture that I have stored on my computer of me and a friend on a walk in the hills around Oslo on a hot summer day. And right after that, there is a table that i made conisting of absolutely random data. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{walk.jpeg}
+    \caption{A picture of yours truly on a walk}
+    \label{fig:picture}
+\end{figure}
+\begin{table}
+    \centering
+    \begin{tabular}{rccccl}
+         \(\beta\) & 1 & 2 & 3 & 4 & $\sum\) \\
+\toprule
+         \(S_o(\beta)\) & 4 & 7 & 3 & 9 & 23 \\
+\(S_i(\beta)\) & 2 & 1 & 1 & 8 & 12 \\
+\bottomrule
+    \end{tabular}
+    \caption{Random data}
+    \label{tab:my_label}
+\end{table}
+Or i could show that i know how to use the itemize funktion i latex to list some things i find amusing such as:
+\begin{itemize}
+    \item cats
+\item comedy
+\end{itemize}
+I could even list them one after the other: 
+\begin{enumerate}
+\item comedy
+\item cats
+\end{enumerate}
+But i wouldn't know when to stop 
+
+\subsection{Some of my own testing}
+In this section I am going to systematically try out some of the functions here in latex so that I'll learn how to navigate the system. 
+
+First I'll start with the maths. Here I'll write down some formulas that I've used in high-school physics: 
+\begin{equation}
+    U_{AB} = \frac{W_{AB}}{q}
+\end{equation}
+\begin{equation}
+    \sum I_j = 0
+\end{equation}
+\begin{equation}
+    U = U_m \sin{\omega t} , U_m = nBA \omega
+\end{equation}
+\begin{equation}
+    B ( \frac{1}{m^2} - \frac{1}{n^2} ) = hf ,  n > m
+\end{equation}
+\begin{equation}
+    \lambda - \lambda_0 = \lambda_c (1 - \cos \alpha) 
+\end{equation}
+\subsubsection{The reference}
+Making a reference can be hard at times\footnote{note that it is easier if you have a subject} but I'll give it my best shot. I want to refer to my favourite book where four bright people explain how to use data types, that according to the book\footnote{i have never read the book and highly doubt that any of them ever expressed this meaning} was more important than their children \cite{Sedgewick2015itp}
+
+And last, but not least, I'm going to show the history of my terminal without loging into student shell: 
+
+\lstset{language=bash}
+  \ 15  ssh hauger@student-shell.sys.kth.se \\
+   \ 16  ssh hauger@student-shell.sys.kth.se\\
+   \ 17  ssh hauger@student-shell.sys.kth.se \\
+   \ 18  ssh hauger@student-shell.sys.kth.se \\
+   \ 19  ssh hauger@student-shell.sys.kth.se \\
+  \ 20  ssh hauger@student.sys.kth.se \\
+   \ 21  ssh hauger@student-shell.sys.kth.se \\
+   \ 22  ssh hauger@student-shell.sys.kth.se \\
+   \ 23  ssh hauger@student-shell.sys.kth.se \\
+   \ 24  ssh hauger@student-shell.sys.kth.se \\
+   \ 25  ssh hauger@student-shell.sys.kth.se \\
+   \ 26  ssh hauger@student-shell.sys.kth.se \\
+  \ 27  ssh hauger@student-shell.sys.kth.se \\
+   \ 28  ssh hauger@student-shell.sys.kth.se \\
+   \ 29  ssh hauger @student-shell.sys.kth.se \\
+   \ 30  ssh hauger@student-shell.sys.kth.se\\
+
+\bibliographystyle{plain}
+\bibliography{the1.bib}
+
+
+\end{document}
